@@ -1,80 +1,208 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacity - Chat Seguro</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <meta name="description" content="Privacity: la app de chat más segura y privada del mercado.">
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ziphra Messenger</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0e0e0e;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1a1a1a;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 2px solid #2a2a2a;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #00ffe7;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #888;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    .emoji {
+      font-size: 1.2em;
+      margin-right: 8px;
+    }
+    a {
+      color: #00ffe7;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #00ffe7;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    .button:hover {
+      background-color: #00c6b0;
+    }
+    .lang-switch {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .lang-switch button {
+      background: none;
+      border: 1px solid #444;
+      color: #aaa;
+      padding: 5px 15px;
+      margin: 0 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .lang-switch button.active {
+      background-color: #00ffe7;
+      color: #000;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #666;
+      border-top: 2px solid #2a2a2a;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-
-  <!-- Header -->
-  <header class="bg-white shadow-md p-4">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-indigo-600">Privacity</h1>
-      <nav class="space-x-4">
-        <a href="#features" class="text-gray-600 hover:text-indigo-600">Características</a>
-        <a href="#security" class="text-gray-600 hover:text-indigo-600">Seguridad</a>
-        <a href="#contact" class="text-gray-600 hover:text-indigo-600">Contacto</a>
-      </nav>
-    </div>
+<body>
+  <header>
+    <h1>Ziphra Messenger 🔐</h1>
+    <p>by Jorge Kagiagian</p>
   </header>
 
-  <!-- Hero -->
-  <section class="bg-indigo-600 text-white py-20">
-    <div class="max-w-3xl mx-auto text-center px-4">
-      <h2 class="text-4xl font-bold mb-4">Tu privacidad, nuestro compromiso</h2>
-      <p class="text-lg mb-6">Privacity es una app de mensajería que protege tus conversaciones con cifrado de extremo a extremo, sin rastreos ni publicidad.</p>
-      <a href="#download" class="bg-white text-indigo-600 px-6 py-2 rounded-lg font-semibold shadow hover:bg-gray-100 transition">Descargar</a>
-    </div>
-  </section>
+  <div class="lang-switch">
+    <button id="btn-en" class="active">English</button>
+    <button id="btn-es">Español</button>
+  </div>
 
-  <!-- Features -->
-  <section id="features" class="py-16 bg-white">
-    <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-3xl font-bold text-center mb-12">Características principales</h3>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-gray-50 p-6 rounded-lg shadow">
-          <h4 class="font-bold text-lg mb-2">Cifrado Avanzado</h4>
-          <p>Protección con protocolos modernos (E2EE). Ni siquiera nosotros podemos leer tus mensajes.</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-lg shadow">
-          <h4 class="font-bold text-lg mb-2">Sin rastreo</h4>
-          <p>No usamos cookies invasivas ni recopilamos tus datos. Tu información te pertenece.</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-lg shadow">
-          <h4 class="font-bold text-lg mb-2">Código abierto</h4>
-          <p>Transparencia total. El código fuente está disponible en GitHub para auditoría pública.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <main>
+    <div id="content-en">
+      <section>
+        <h2>Why Ziphra?</h2>
+        <p>Ziphra Messenger is more than just a secure app — it’s a statement.  
+        A declaration that your privacy is not a commodity, and your communication deserves absolute protection.</p>
+        <p>Designed for activists, journalists, developers, dissidents — and for anyone who simply values their freedom.</p>
+      </section>
 
-  <!-- Security -->
-  <section id="security" class="py-16 bg-gray-100">
-    <div class="max-w-5xl mx-auto px-4 text-center">
-      <h3 class="text-3xl font-bold mb-6">Seguridad sin compromisos</h3>
-      <p class="text-lg mb-6">Privacity utiliza Signal Protocol, una de las tecnologías de cifrado más confiables del mundo. Los mensajes se destruyen tras leerse, y los archivos se autodestruyen si así lo configurás.</p>
-      <img src="https://cdn.pixabay.com/photo/2020/06/25/17/33/security-5331898_960_720.png" alt="Seguridad digital" class="mx-auto mt-6 w-64" />
-    </div>
-  </section>
+      <section>
+        <h2>Security Features</h2>
+        <p><span class="emoji">🚫</span>No data collection</p>
+        <p><span class="emoji">🧹</span>All metadata is stripped</p>
+        <p><span class="emoji">🕵️‍♂️</span>No person, organization, or government can access any information</p>
+        <p><span class="emoji">🛡️</span>User identities and contacts are fully protected</p>
+        <p><span class="emoji">📶</span>Works independently of any platform — even without a phone line</p>
+      </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-16 bg-white">
-    <div class="max-w-xl mx-auto text-center px-4">
-      <h3 class="text-3xl font-bold mb-4">Contacto</h3>
-      <p class="mb-6">¿Querés saber más, reportar un bug o colaborar? Escribinos.</p>
-      <a href="mailto:soporte@privacity.app" class="inline-block bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-500">soporte@privacity.app</a>
-    </div>
-  </section>
+      <section>
+        <h2>Storage & Communication</h2>
+        <p><span class="emoji">📭</span>No messages, photos, audio, or videos are stored on the device</p>
+        <p><span class="emoji">💬</span>Communication is ephemeral, private, and fully secured</p>
+      </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-gray-300 text-center py-6 mt-16">
-    <p>&copy; 2025 Privacity. Todos los derechos reservados.</p>
-    <p class="text-sm mt-2">Hecho con 💻 en Buenos Aires.</p>
+      <section>
+        <h2>Open Source & Freedom</h2>
+        <p><span class="emoji">🧩</span>Ziphra is 100% open source and licensed under the GNU General Public License v3.0 (GPLv3)</p>
+        <p>Anyone can audit, modify, or contribute to the project. There are no secrets — only strong encryption.</p>
+        <a class="button" href="https://github.com/ziphra-messenger" target="_blank">View on GitHub</a>
+      </section>
+
+      <section>
+        <h2>Mission Statement</h2>
+        <p>Ziphra is built around a single principle:</p>
+        <p style="font-size: 1.4em; font-weight: bold; margin-top: 10px;">
+          Anonymity and privacy — guaranteed.
+        </p>
+      </section>
+    </div>
+
+    <div id="content-es" style="display:none;">
+      <section>
+        <h2>¿Por qué Ziphra?</h2>
+        <p>Ziphra Messenger no es solo una app segura — es una declaración.  
+        Una afirmación de que tu privacidad no es una mercancía, y que tu comunicación merece protección absoluta.</p>
+        <p>Diseñada para activistas, periodistas, desarrolladores, disidentes — y para cualquiera que valore su libertad.</p>
+      </section>
+
+      <section>
+        <h2>Características de Seguridad</h2>
+        <p><span class="emoji">🚫</span>No recolecta datos</p>
+        <p><span class="emoji">🧹</span>Elimina todos los metadatos</p>
+        <p><span class="emoji">🕵️‍♂️</span>Ninguna persona, organización ni gobierno puede acceder a la información</p>
+        <p><span class="emoji">🛡️</span>Protege la identidad del usuario y de sus contactos</p>
+        <p><span class="emoji">📶</span>Funciona de forma independiente — incluso sin línea telefónica</p>
+      </section>
+
+      <section>
+        <h2>Almacenamiento y Comunicación</h2>
+        <p><span class="emoji">📭</span>No guarda mensajes, fotos, audios ni videos en el dispositivo</p>
+        <p><span class="emoji">💬</span>La comunicación es efímera, privada y totalmente blindada</p>
+      </section>
+
+      <section>
+        <h2>Código Abierto y Libertad</h2>
+        <p><span class="emoji">🧩</span>Ziphra es 100% open source y está licenciada bajo la GNU GPL v3.0</p>
+        <p>Cualquiera puede auditar, modificar o contribuir. No hay secretos — solo encriptación fuerte.</p>
+        <a class="button" href="https://github.com/ziphra-messenger" target="_blank">Ver en GitHub</a>
+      </section>
+
+      <section>
+        <h2>Manifiesto</h2>
+        <p>Ziphra se construyó sobre un principio fundamental:</p>
+        <p style="font-size: 1.4em; font-weight: bold; margin-top: 10px;">
+          Anonimato y privacidad — garantizados.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Jorge Kagiagian — Ziphra Messenger<br/>
+    <a href="https://github.com/ziphra-messenger" target="_blank">github.com/ziphra-messenger</a>
   </footer>
 
+  <script>
+    const btnEn = document.getElementById('btn-en');
+    const btnEs = document.getElementById('btn-es');
+    const contentEn = document.getElementById('content-en');
+    const contentEs = document.getElementById('content-es');
+
+    btnEn.onclick = () => {
+      contentEn.style.display = 'block';
+      contentEs.style.display = 'none';
+      btnEn.classList.add('active');
+      btnEs.classList.remove('active');
+    };
+
+    btnEs.onclick = () => {
+      contentEn.style.display = 'none';
+      contentEs.style.display = 'block';
+      btnEs.classList.add('active');
+      btnEn.classList.remove('active');
+    };
+  </script>
 </body>
 </html>
