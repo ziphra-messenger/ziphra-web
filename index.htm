@@ -2,207 +2,150 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ziphra Messenger - Encrypted, Anonymous, and Open Source Messaging System" />
   <title>Ziphra Messenger</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #0e0e0e;
-      color: #e0e0e0;
-      font-family: 'Segoe UI', sans-serif;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #1a1a1a;
-      padding: 40px 20px;
-      text-align: center;
-      border-bottom: 2px solid #2a2a2a;
-    }
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-      color: #00ffe7;
-    }
-    header p {
-      font-size: 1.2em;
-      color: #888;
-    }
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    section {
-      margin-bottom: 50px;
-    }
-    .emoji {
-      font-size: 1.2em;
-      margin-right: 8px;
-    }
-    a {
-      color: #00ffe7;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: #00ffe7;
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background-color 0.3s;
-    }
-    .button:hover {
-      background-color: #00c6b0;
-    }
-    .lang-switch {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .lang-switch button {
-      background: none;
-      border: 1px solid #444;
-      color: #aaa;
-      padding: 5px 15px;
-      margin: 0 5px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .lang-switch button.active {
-      background-color: #00ffe7;
-      color: #000;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      color: #666;
-      border-top: 2px solid #2a2a2a;
-      font-size: 0.9em;
-    }
+    body { font-family: Arial, sans-serif; background: #111; color: #eee; line-height: 1.6; margin: 0; padding: 0; }
+    .container { max-width: 900px; margin: auto; padding: 2rem; }
+    h1, h2 { color: #0ff; }
+    a { color: #0af; text-decoration: none; }
+    nav { margin-bottom: 2rem; }
+    nav a { margin-right: 1rem; }
+    .lang { display: none; }
+    .lang.active { display: block; }
   </style>
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.querySelector('.lang-' + lang).classList.add('active');
+    }
+  </script>
 </head>
 <body>
-  <header>
-    <h1>Ziphra Messenger 🔐</h1>
-    <p>by Jorge Kagiagian</p>
-  </header>
+  <div class="container">
+    <nav>
+      <a href="#" onclick="setLang('en')">English</a>
+      <a href="#" onclick="setLang('es')">Español</a>
+      <a href="#" onclick="setLang('pt')">Português</a>
+      <a href="#" onclick="setLang('fr')">Français</a>
+    </nav>
 
-  <div class="lang-switch">
-    <button id="btn-en" class="active">English</button>
-    <button id="btn-es">Español</button>
+    <!-- English -->
+    <div class="lang lang-en active">
+      <h1>Ziphra Messenger 🔐</h1>
+      <p><strong>Ziphra Messenger</strong> is an inviolable, end-to-end encrypted messaging system, built with military-grade encryption and engineered to guarantee total privacy and digital autonomy.</p>
+      <ul>
+        <li>🚫 No data is ever collected — not now, not later</li>
+        <li>🧹 All metadata is stripped before transmission</li>
+        <li>📱 Nothing is stored on the device: no messages, no photos, no audio, no videos</li>
+        <li>🧾 <strong>No phone number, email, or identity verification is ever required</strong></li>
+        <li>🕵️‍♂️ No person, organization, or government can ever access your information</li>
+        <li>🛡️ Both the user's identity and their contacts remain completely hidden</li>
+        <li>📶 Fully independent — works without a phone line, SIM card, or any external platform. No dependencies, no intermediaries</li>
+      </ul>
+      <p>💬 Every conversation is ephemeral, private, and 100% secured</p>
+      <p>🔒 The entire system is sealed: there are no backdoors, no trackers, and no exceptions</p>
+      <p><strong>Ziphra is 100% open source</strong>, licensed under the <strong>GNU General Public License v3.0 (GPLv3)</strong>.</p>
+      <p>Anyone can inspect, audit, and improve the code — total transparency, no hidden logic.</p>
+      <p>Ziphra is not just secure — it is <strong>absolutely anonymous, untraceable, and unbreakable</strong>.</p>
+      <blockquote>
+        Designed for those who demand true digital freedom. <br />
+        Created to protect what others don't: your silence, your absence, your right to vanish.
+      </blockquote>
+      <h2>🤝 Join the Community</h2>
+      <p>Ziphra is not just an app — it’s a movement for uncompromised privacy.</p>
+      <p>We invite developers, cryptographers, researchers, designers, testers, translators, and privacy advocates from around the world to contribute.<br />
+        Whether you're fixing bugs, suggesting features, auditing the code, or helping spread the mission — your voice is part of this resistance.</p>
+      <p><strong>Created by Jorge Ariel. Together, we can reclaim digital dignity.</strong></p>
+    </div>
+
+    <!-- Spanish -->
+    <div class="lang lang-es">
+      <h1>Ziphra Messenger 🔐</h1>
+      <p><strong>Ziphra Messenger</strong> es un sistema de mensajería inviolable, con cifrado de extremo a extremo, desarrollado con criptografía de grado militar y diseñado para garantizar total privacidad y autonomía digital.</p>
+      <ul>
+        <li>🚫 Nunca se recopilan datos — ni ahora, ni después</li>
+        <li>🧹 Todos los metadatos se eliminan antes de la transmisión</li>
+        <li>📱 No se almacena nada en el dispositivo: ni mensajes, ni fotos, ni audios, ni videos</li>
+        <li>🧾 <strong>No se requiere número de teléfono, correo ni verificación de identidad</strong></li>
+        <li>🕵️‍♂️ Ninguna persona, organización ni gobierno puede acceder a tu información</li>
+        <li>🛡️ Tanto la identidad del usuario como sus contactos permanecen completamente ocultos</li>
+        <li>📶 Totalmente independiente — funciona sin línea telefónica, tarjeta SIM ni plataformas externas. Sin dependencias, sin intermediarios</li>
+      </ul>
+      <p>💬 Cada conversación es efímera, privada y 100% segura</p>
+      <p>🔒 El sistema está completamente sellado: sin puertas traseras, sin rastreadores, sin excepciones</p>
+      <p><strong>Ziphra es 100% open source</strong>, bajo la licencia <strong>GNU GPLv3</strong>.</p>
+      <p>Cualquiera puede inspeccionar, auditar y mejorar el código — total transparencia, sin lógica oculta.</p>
+      <p>Ziphra no solo es segura — es <strong>totalmente anónima, indetectable e irrompible</strong>.</p>
+      <blockquote>
+        Diseñada para quienes exigen verdadera libertad digital. <br />
+        Creada para proteger lo que otros no: tu silencio, tu ausencia, tu derecho a desaparecer.
+      </blockquote>
+      <h2>🤝 Unite a la Comunidad</h2>
+      <p>Ziphra no es solo una app — es un movimiento por la privacidad sin concesiones.</p>
+      <p>Invitamos a desarrolladores, criptógrafos, investigadores, diseñadores, testers, traductores y defensores de la privacidad de todo el mundo a colaborar.<br />
+        Ya sea corrigiendo errores, sugiriendo funciones, auditando el código o difundiendo la misión — tu voz es parte de esta resistencia.</p>
+      <p><strong>Creado por Jorge Ariel. Juntos podemos recuperar la dignidad digital.</strong></p>
+    </div>
+
+    <!-- Portuguese -->
+    <div class="lang lang-pt">
+      <h1>Ziphra Messenger 🔐</h1>
+      <p><strong>Ziphra Messenger</strong> é um sistema de mensagens inviolável, com criptografia de ponta a ponta, desenvolvido com segurança de nível militar para garantir privacidade total e autonomia digital.</p>
+      <ul>
+        <li>🚫 Nenhum dado é coletado — nunca</li>
+        <li>🧹 Todos os metadados são removidos antes da transmissão</li>
+        <li>📱 Nada é armazenado no dispositivo: nenhuma mensagem, foto, áudio ou vídeo</li>
+        <li>🧾 <strong>Não é necessário número de telefone, e-mail ou verificação de identidade</strong></li>
+        <li>🕵️‍♂️ Nenhuma pessoa, organização ou governo pode acessar suas informações</li>
+        <li>🛡️ A identidade do usuário e seus contatos permanecem completamente ocultos</li>
+        <li>📶 Totalmente independente — funciona sem linha telefônica, chip ou plataforma externa. Sem dependências, sem intermediários</li>
+      </ul>
+      <p>💬 Cada conversa é efêmera, privada e 100% segura</p>
+      <p>🔒 Todo o sistema é blindado: sem backdoors, rastreadores ou exceções</p>
+      <p><strong>Ziphra é 100% open source</strong>, licenciada sob <strong>GNU GPLv3</strong>.</p>
+      <p>Qualquer pessoa pode inspecionar, auditar e melhorar o código — transparência total, sem lógica oculta.</p>
+      <p>Ziphra não é apenas segura — é <strong>totalmente anônima, indetectável e inquebrável</strong>.</p>
+      <blockquote>
+        Projetada para quem exige verdadeira liberdade digital. <br />
+        Criada para proteger o que outros não protegem: seu silêncio, sua ausência, seu direito de desaparecer.
+      </blockquote>
+      <h2>🤝 Participe da Comunidade</h2>
+      <p>Ziphra não é apenas um aplicativo — é um movimento por privacidade sem concessões.</p>
+      <p>Convidamos desenvolvedores, criptógrafos, pesquisadores, designers, testadores, tradutores e defensores da privacidade a contribuir.<br />
+        Corrigindo bugs, sugerindo recursos, auditando o código ou divulgando a missão — sua voz faz parte da resistência.</p>
+      <p><strong>Criado por Jorge Ariel. Juntos podemos recuperar a dignidade digital.</strong></p>
+    </div>
+
+    <!-- French -->
+    <div class="lang lang-fr">
+      <h1>Ziphra Messenger 🔐</h1>
+      <p><strong>Ziphra Messenger</strong> est un système de messagerie inviolable, chiffré de bout en bout, conçu avec un cryptage de niveau militaire pour garantir une confidentialité totale et une autonomie numérique absolue.</p>
+      <ul>
+        <li>🚫 Aucune donnée n'est jamais collectée — ni maintenant, ni plus tard</li>
+        <li>🧹 Tous les métadonnées sont supprimés avant la transmission</li>
+        <li>📱 Rien n'est stocké sur l'appareil : pas de messages, pas de photos, pas d'audios, pas de vidéos</li>
+        <li>🧾 <strong>Aucun numéro de téléphone, email ou vérification d'identité requis</strong></li>
+        <li>🕵️‍♂️ Aucune personne, organisation ou gouvernement ne peut accéder à vos informations</li>
+        <li>🛡️ L'identité de l'utilisateur et ses contacts restent totalement cachés</li>
+        <li>📶 Entièrement indépendant — fonctionne sans ligne téléphonique, carte SIM ou plateforme externe. Aucune dépendance, aucun intermédiaire</li>
+      </ul>
+      <p>💬 Chaque conversation est éphémère, privée et 100% sécurisée</p>
+      <p>🔒 Le système entier est scellé : pas de portes dérobées, pas de traceurs, aucune exception</p>
+      <p><strong>Ziphra est 100% open source</strong>, sous licence <strong>GNU GPLv3</strong>.</p>
+      <p>Tout le monde peut inspecter, auditer et améliorer le code — transparence totale, sans logique cachée.</p>
+      <p>Ziphra n’est pas seulement sécurisé — il est <strong>absolument anonyme, intraçable et inviolable</strong>.</p>
+      <blockquote>
+        Conçu pour ceux qui exigent une véritable liberté numérique. <br />
+        Créé pour protéger ce que les autres ne font pas : votre silence, votre absence, votre droit de disparaître.
+      </blockquote>
+      <h2>🤝 Rejoignez la Communauté</h2>
+      <p>Ziphra n’est pas seulement une application — c’est un mouvement pour une vie privée sans compromis.</p>
+      <p>Nous invitons développeurs, cryptographes, chercheurs, designers, testeurs, traducteurs et défenseurs de la vie privée à contribuer.<br />
+        Corrigez des bugs, proposez des fonctionnalités, auditez le code ou aidez à diffuser la mission — votre voix fait partie de cette résistance.</p>
+      <p><strong>Créé par Jorge Ariel. Ensemble, nous pouvons reconquérir la dignité numérique.</strong></p>
+    </div>
   </div>
-
-  <main>
-    <div id="content-en">
-      <section>
-        <h2>Why Ziphra?</h2>
-        <p>Ziphra Messenger is more than just a secure app — it’s a statement.  
-        A declaration that your privacy is not a commodity, and your communication deserves absolute protection.</p>
-        <p>Designed for activists, journalists, developers, dissidents — and for anyone who simply values their freedom.</p>
-      </section>
-
-      <section>
-        <h2>Security Features</h2>
-        <p><span class="emoji">🚫</span>No data collection</p>
-        <p><span class="emoji">🧹</span>All metadata is stripped</p>
-        <p><span class="emoji">🕵️‍♂️</span>No person, organization, or government can access any information</p>
-        <p><span class="emoji">🛡️</span>User identities and contacts are fully protected</p>
-        <p><span class="emoji">📶</span>Works independently of any platform — even without a phone line</p>
-      </section>
-
-      <section>
-        <h2>Storage & Communication</h2>
-        <p><span class="emoji">📭</span>No messages, photos, audio, or videos are stored on the device</p>
-        <p><span class="emoji">💬</span>Communication is ephemeral, private, and fully secured</p>
-      </section>
-
-      <section>
-        <h2>Open Source & Freedom</h2>
-        <p><span class="emoji">🧩</span>Ziphra is 100% open source and licensed under the GNU General Public License v3.0 (GPLv3)</p>
-        <p>Anyone can audit, modify, or contribute to the project. There are no secrets — only strong encryption.</p>
-        <a class="button" href="https://github.com/ziphra-messenger" target="_blank">View on GitHub</a>
-      </section>
-
-      <section>
-        <h2>Mission Statement</h2>
-        <p>Ziphra is built around a single principle:</p>
-        <p style="font-size: 1.4em; font-weight: bold; margin-top: 10px;">
-          Anonymity and privacy — guaranteed.
-        </p>
-      </section>
-    </div>
-
-    <div id="content-es" style="display:none;">
-      <section>
-        <h2>¿Por qué Ziphra?</h2>
-        <p>Ziphra Messenger no es solo una app segura — es una declaración.  
-        Una afirmación de que tu privacidad no es una mercancía, y que tu comunicación merece protección absoluta.</p>
-        <p>Diseñada para activistas, periodistas, desarrolladores, disidentes — y para cualquiera que valore su libertad.</p>
-      </section>
-
-      <section>
-        <h2>Características de Seguridad</h2>
-        <p><span class="emoji">🚫</span>No recolecta datos</p>
-        <p><span class="emoji">🧹</span>Elimina todos los metadatos</p>
-        <p><span class="emoji">🕵️‍♂️</span>Ninguna persona, organización ni gobierno puede acceder a la información</p>
-        <p><span class="emoji">🛡️</span>Protege la identidad del usuario y de sus contactos</p>
-        <p><span class="emoji">📶</span>Funciona de forma independiente — incluso sin línea telefónica</p>
-      </section>
-
-      <section>
-        <h2>Almacenamiento y Comunicación</h2>
-        <p><span class="emoji">📭</span>No guarda mensajes, fotos, audios ni videos en el dispositivo</p>
-        <p><span class="emoji">💬</span>La comunicación es efímera, privada y totalmente blindada</p>
-      </section>
-
-      <section>
-        <h2>Código Abierto y Libertad</h2>
-        <p><span class="emoji">🧩</span>Ziphra es 100% open source y está licenciada bajo la GNU GPL v3.0</p>
-        <p>Cualquiera puede auditar, modificar o contribuir. No hay secretos — solo encriptación fuerte.</p>
-        <a class="button" href="https://github.com/ziphra-messenger" target="_blank">Ver en GitHub</a>
-      </section>
-
-      <section>
-        <h2>Manifiesto</h2>
-        <p>Ziphra se construyó sobre un principio fundamental:</p>
-        <p style="font-size: 1.4em; font-weight: bold; margin-top: 10px;">
-          Anonimato y privacidad — garantizados.
-        </p>
-      </section>
-    </div>
-  </main>
-
-  <footer>
-    &copy; 2025 Jorge Kagiagian — Ziphra Messenger<br/>
-    <a href="https://github.com/ziphra-messenger" target="_blank">github.com/ziphra-messenger</a>
-  </footer>
-
-  <script>
-    const btnEn = document.getElementById('btn-en');
-    const btnEs = document.getElementById('btn-es');
-    const contentEn = document.getElementById('content-en');
-    const contentEs = document.getElementById('content-es');
-
-    btnEn.onclick = () => {
-      contentEn.style.display = 'block';
-      contentEs.style.display = 'none';
-      btnEn.classList.add('active');
-      btnEs.classList.remove('active');
-    };
-
-    btnEs.onclick = () => {
-      contentEn.style.display = 'none';
-      contentEs.style.display = 'block';
-      btnEs.classList.add('active');
-      btnEn.classList.remove('active');
-    };
-  </script>
 </body>
 </html>
