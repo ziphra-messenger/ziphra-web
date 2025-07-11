@@ -6,74 +6,112 @@
   <title>Ziphra Messenger 🔐</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 20px;
-      background-color: #fafafa;
-      color: #222;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 40px auto;
+      max-width: 900px;
+      color: #d1d5db;
+      background-color: #121212;
       line-height: 1.6;
     }
     h1, h2 {
-      color: #0b3d91;
+      color: #e0e7ff;
+      font-weight: 600;
+      margin-bottom: 0.4em;
+    }
+    h1 {
+      font-size: 2.4rem;
+      border-bottom: 2px solid #374151;
+      padding-bottom: 0.3em;
+      margin-bottom: 1em;
+    }
+    p, li {
+      font-size: 1rem;
+      color: #cbd5e1;
+    }
+    ul {
+      margin: 1em 0 1.5em 1.2em;
+      padding: 0;
+      list-style-type: disc;
+      color: #cbd5e1;
     }
     a {
-      color: #0b3d91;
+      color: #60a5fa;
       text-decoration: none;
     }
-    a:hover {
+    a:hover, a:focus {
       text-decoration: underline;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin: 20px 0;
-      font-size: 15px;
+      margin-top: 2em;
+      margin-bottom: 3em;
+      font-size: 0.95rem;
+      color: #cbd5e1;
+      box-shadow: 0 0 10px rgba(96, 165, 250, 0.3);
     }
     th, td {
-      border: 1px solid #ccc;
-      padding: 12px;
+      border: 1px solid #374151;
+      padding: 14px 18px;
       text-align: center;
     }
     thead {
-      background-color: #0b3d91;
-      color: #fff;
+      background-color: #1e293b;
+      color: #e0e7ff;
+      font-weight: 600;
+    }
+    tbody tr:hover {
+      background-color: #374151;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #1f2937;
     }
     tbody tr:nth-child(odd) {
-      background-color: #f9f9f9;
+      background-color: #111827;
     }
     .contact {
-      font-size: 16px;
-      margin-top: 40px;
+      font-size: 1rem;
+      border-top: 1px solid #374151;
+      padding-top: 1.5em;
+      margin-top: 3em;
+      color: #cbd5e1;
+    }
+    .contact strong {
+      color: #e0e7ff;
     }
   </style>
 </head>
 <body>
 
   <h1>Ziphra Messenger 🔐</h1>
+
   <p>
     Ziphra Messenger is an inviolable, end-to-end encrypted messaging system, built with military-grade encryption and engineered to guarantee total privacy and digital autonomy.
   </p>
   <ul>
-    <li>🚫 No data is ever collected — not now, not later</li>
-    <li>🧹 All metadata is stripped before transmission</li>
-    <li>📱 Nothing is stored on the device: no messages, no photos, no audio, no videos</li>
-    <li>🧾 No phone number, email, or identity verification is ever required</li>
-    <li>🕵️‍♂️ No person, organization, or government can ever access your information</li>
-    <li>🛡️ Both the user's identity and their contacts remain completely hidden</li>
-    <li>📶 Fully independent — works without a phone line, SIM card, or any external platform. No dependencies, no intermediaries</li>
-    <li>💬 Every conversation is ephemeral, private, and 100% secured</li>
+    <li>No data is ever collected — not now, not later</li>
+    <li>All metadata is stripped before transmission</li>
+    <li>Nothing is stored on the device: no messages, no photos, no audio, no videos</li>
+    <li>No phone number, email, or identity verification is ever required</li>
+    <li>No person, organization, or government can ever access your information</li>
+    <li>Both the user's identity and their contacts remain completely hidden</li>
+    <li>Fully independent — works without a phone line, SIM card, or any external platform. No dependencies, no intermediaries</li>
+    <li>Every conversation is ephemeral, private, and 100% secured</li>
   </ul>
+
   <p>
-    🔒 The entire system is sealed: there are no backdoors, no trackers, and no exceptions
-  </p>
-  <p>
-    Ziphra is 100% open source, licensed under the GNU General Public License v3.0 (GPLv3).<br>
-    Anyone can inspect, audit, and improve the code — total transparency, no hidden logic.<br>
-    Ziphra is not just secure — it is absolutely anonymous, untraceable, and unbreakable.<br>
-    Designed for those who demand true digital freedom.<br>
-    Created to protect what others don't: your silence, your absence, your right to vanish.
+    The entire system is sealed: there are no backdoors, no trackers, and no exceptions.
   </p>
 
-  <h2>🔍 Why Choose Ziphra Over WhatsApp, Signal, or Telegram?</h2>
+  <p>
+    Ziphra is 100% open source, licensed under the GNU General Public License v3.0 (GPLv3). Anyone can inspect, audit, and improve the code — total transparency, no hidden logic.
+  </p>
+
+  <p>
+    Ziphra is not just secure — it is absolutely anonymous, untraceable, and unbreakable. Designed for those who demand true digital freedom. Created to protect what others don't: your silence, your absence, your right to vanish.
+  </p>
+
+  <h2>Why Choose Ziphra Over WhatsApp, Signal, or Telegram?</h2>
 
   <table>
     <thead>
@@ -88,61 +126,61 @@
     <tbody>
       <tr>
         <td>End-to-End Encryption</td>
-        <td>✅ Always enabled</td>
-        <td>✅ Default</td>
-        <td>⚠️ Only in secret chats</td>
-        <td>✅ Default</td>
+        <td>Always enabled</td>
+        <td>Default</td>
+        <td>Only in secret chats</td>
+        <td>Default</td>
       </tr>
       <tr>
         <td>Metadata Stripped</td>
-        <td>✅ Fully stripped</td>
-        <td>⚠️ Partial</td>
-        <td>❌ Retained</td>
-        <td>❌ Retained</td>
+        <td>Fully stripped</td>
+        <td>Partial</td>
+        <td>Retained</td>
+        <td>Retained</td>
       </tr>
       <tr>
         <td>No Account Needed</td>
-        <td>✅ 100% anonymous</td>
-        <td>❌ Phone number required</td>
-        <td>❌ Phone number required</td>
-        <td>❌ Phone number required</td>
+        <td>100% anonymous</td>
+        <td>Phone number required</td>
+        <td>Phone number required</td>
+        <td>Phone number required</td>
       </tr>
       <tr>
         <td>Offline Functionality</td>
-        <td>✅ Fully functional</td>
-        <td>❌ Requires connectivity</td>
-        <td>❌ Requires connectivity</td>
-        <td>❌ Requires connectivity</td>
+        <td>Fully functional</td>
+        <td>Requires connectivity</td>
+        <td>Requires connectivity</td>
+        <td>Requires connectivity</td>
       </tr>
       <tr>
         <td>Open Source</td>
-        <td>✅ 100% (GPLv3)</td>
-        <td>✅ Partially</td>
-        <td>⚠️ Partially</td>
-        <td>❌ Closed source</td>
+        <td>100% (GPLv3)</td>
+        <td>Partially</td>
+        <td>Partially</td>
+        <td>Closed source</td>
       </tr>
       <tr>
         <td>Self-Hosting Server</td>
-        <td>✅ Easy to deploy</td>
-        <td>⚠️ Complex to set up</td>
-        <td>❌ Not possible</td>
-        <td>❌ Not possible</td>
+        <td>Easy to deploy</td>
+        <td>Complex to set up</td>
+        <td>Not possible</td>
+        <td>Not possible</td>
       </tr>
       <tr>
         <td>Truly Anonymous</td>
-        <td>✅ Completely untraceable</td>
-        <td>❌ Phone linked</td>
-        <td>❌ Identity linked</td>
-        <td>❌ Identity linked</td>
+        <td>Completely untraceable</td>
+        <td>Phone linked</td>
+        <td>Identity linked</td>
+        <td>Identity linked</td>
       </tr>
     </tbody>
   </table>
 
   <div class="contact">
-    <h2>📬 Contact</h2>
+    <h2>Contact</h2>
     <p>
-      📧 <strong>Email:</strong> <a href="mailto:jorgekagiagian@gmail.com">jorgekagiagian@gmail.com</a><br>
-      📱 <strong>WhatsApp:</strong> <a href="https://wa.me/5491159974206" target="_blank">+54 9 11 5997-4206</a>
+      <strong>Email:</strong> <a href="mailto:jorgekagiagian@gmail.com" style="color:#60a5fa;">jorgekagiagian@gmail.com</a><br />
+      <strong>WhatsApp:</strong> <a href="https://wa.me/5491159974206" target="_blank" rel="noopener noreferrer" style="color:#60a5fa;">+54 9 11 5997-4206</a>
     </p>
   </div>
 
