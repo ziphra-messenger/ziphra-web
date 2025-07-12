@@ -18,6 +18,7 @@
       padding: 40px 20px;
     }
 
+    /* Contenedor principal */
     .container {
       max-width: 900px;
       width: 100%;
@@ -26,6 +27,7 @@
       padding: 40px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.3);
       text-align: center;
+      margin-left: 220px; /* deja espacio para el sidebar */
     }
 
     h1, h2 {
@@ -110,22 +112,79 @@
       margin: 0.3em 0;
     }
 
+    /* Sidebar lateral fijo */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 200px;
+      background-color: #2c3e50;
+      padding-top: 60px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      z-index: 1000;
+    }
+
+    .sidebar a {
+      color: #b8d7ff;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      width: 90%;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .sidebar a:hover {
+      background-color: #4fc3f7;
+      color: #1c2331;
+      text-decoration: none;
+    }
+
     @media (max-width: 768px) {
+      body {
+        padding: 20px 10px;
+      }
+
       .container {
+        margin-left: 0;
         padding: 20px;
       }
 
-      th, td {
-        font-size: 0.85rem;
+      .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        padding: 10px 0;
+        gap: 10px;
+        box-shadow: none;
+        justify-content: space-around;
       }
 
-      ul {
-        text-align: left;
+      .sidebar a {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+        width: auto;
       }
     }
   </style>
 </head>
 <body>
+
+  <nav class="sidebar">
+    <a href="https://github.com/ziphra-messenger" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="./javadocs.html" target="_blank" rel="noopener noreferrer">Javadoc</a>
+    <a href="./wiki.html" target="_blank" rel="noopener noreferrer">Wiki</a>
+    <a href="./release.html" target="_blank" rel="noopener noreferrer">Release</a>
+    <a href="#contact-section">Contact</a>
+  </nav>
 
   <div class="container">
     <h1>Ziphra Messenger 🔐</h1>
@@ -215,25 +274,22 @@
       </tbody>
     </table>
 
-    <div class="contact">
+    <div class="contact" id="contact-section">
       <h2>📬 Contact</h2>
       <p>📧 <strong>Email:</strong> <a href="mailto:jorgekagiagian@gmail.com">jorgekagiagian@gmail.com</a></p>
       <p>📱 <strong>WhatsApp:</strong> <a href="https://wa.me/5491159974206" target="_blank">+54 9 11 5997-4206</a></p>
       <p>💻 Project on GitHub: <a href="https://github.com/ziphra-messenger" target="_blank">github.com/ziphra-messenger</a></p>
-
     </div>
 
-
     <footer>
-
-  <p>
-    🧑‍💻 Open Source under 
-    <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU General Public License v3.0</a>
-  </p>
-  <p style="margin-top: 10px; font-size: 0.8rem; color: #888;">
-    © 2025 Ziphra Messenger — Created by Jorge Kagiagian
-  </p>
-</footer>
+      <p>
+        🧑‍💻 Open Source under 
+        <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU General Public License v3.0</a>
+      </p>
+      <p style="margin-top: 10px; font-size: 0.8rem; color: #888;">
+        © 2025 Ziphra Messenger — Created by Jorge Kagiagian
+      </p>
+    </footer>
   </div>
 
 </body>
