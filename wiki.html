@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ziphra Messenger 🔐</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div include-html="navbar.html"></div>
+
+
+  <div class="container">
+            <h1>Ziphra Messenger Documentation</h1>
+            <p>The Ziphra project is divided into three main components: <strong>Common</strong> (shared), <strong>Client</strong> (Android), and <strong>Server</strong> (multi-module backend). Each part of the project has a dedicated <strong>GitHub Wiki</strong> with documentation and technical details:</p>
+            <ul>
+                <li>
+                    <b>ziphra-common</b>: Shared code for client and server. 
+
+                </li>
+                <li>
+                   <b>ziphra-client</b>: Android application (client-side).
+
+                </li>
+                <li>
+                    <b>ziphra-server</b>: Server-side modules.
+
+
+                </li>
+            </ul>
+            <h2>📦 Shared Module</h2>
+            <ul>
+                <li>
+                    <strong>ziphra-common</strong>: Contains reusable classes shared between client and server, such as cryptographic primitives, protocol constants, and utilities.
+                                        <a href="">Javadoc</a>
+                    <a href="">Wiki</a>
+                </li>
+            </ul>
+            <h2>📱 Client</h2>
+            <ul>
+                <li>
+                    <strong>ziphra-client</strong>: Android front-end of the application. Handles user interaction, message display, and secure communication with the backend.
+                    <a href="">Javadoc</a>
+                    <a href="">Wiki</a>
+                </li>
+            </ul>
+            <h2>🖥️ Server: ziphra-server <a target="_blank" href="https://github.com/ziphra-messenger/ziphra-server/wiki">Wiki</a></h2>
+            <p>This repository contains multiple coordinated backend modules:</p>
+            <ul>
+                <li>
+                    <strong>ziphra-core</strong>: Core logic and base classes shared across server components.
+                    <a href="">Javadoc</a>
+                </li>
+                <li>
+                    <strong>ziphra-security</strong>: Common security logic used by <code>ziphra-appserver</code> and <code>ziphra-messaging</code>, including encryption, signature handling, and token management.
+                    <a href="">Javadoc</a>
+                </li>
+                <li>
+                    <strong>ziphra-commonback</strong>: Utility classes and helpers used throughout the backend.
+                    <a href="">Javadoc</a>
+                </li>
+                <li>
+                    <strong>ziphra-appserver</strong>: Main entry point for client connections. Manages session establishment, API endpoints, and authorization.
+                    <a href="">Javadoc</a>
+                </li>
+                <li>
+                    <strong>ziphra-idsprovider</strong>: Responsible for generating secure, random user identifiers and nicknames for anonymous use.
+                    <a href="">Javadoc</a>
+                </li>
+                <li>
+                    <strong>ziphra-sessionmanager</strong>: Handles in-memory sessions, key management, and temporary identity tracking.
+                    <a href="">Javadoc</a>
+                </li>
+                <li>
+                    <strong>ziphra-messaging</strong>: Delivers push messages securely between users, preserving anonymity and end-to-end encryption guarantees.
+                    <a href="">Javadoc</a>
+                </li>
+            </ul>
+   
+        
+                    
+
+             <div include-html="footer.html"></div>
+</div>
+     
+
+
+ 
+
+  <script src="include.js"></script>
+</body>
+</html>

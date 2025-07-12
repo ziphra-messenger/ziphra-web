@@ -4,293 +4,105 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ziphra Messenger 🔐</title>
-  <style>
-    body {
-      margin: 0;
-      background: linear-gradient(to bottom right, #1c2331, #3c4858);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #f1f1f1;
-      line-height: 1.7;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      min-height: 100vh;
-      padding: 40px 20px;
-    }
-
-    /* Contenedor principal */
-    .container {
-      max-width: 900px;
-      width: 100%;
-      background: #ffffff0a;
-      border-radius: 12px;
-      padding: 40px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-      text-align: center;
-      margin-left: 220px; /* deja espacio para el sidebar */
-    }
-
-    h1, h2 {
-      color: #ffffff;
-      font-weight: 600;
-      margin-top: 0;
-      border-left: 0;
-      padding-left: 0;
-    }
-
-    h1 {
-      font-size: 2.4rem;
-      border-bottom: 2px solid #4fc3f7;
-      padding-bottom: 0.3em;
-      margin-bottom: 1em;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 0;
-      text-align: left;
-      display: inline-block;
-    }
-
-    ul li::before {
-      content: "✔️";
-      margin-right: 10px;
-    }
-
-    ul li {
-      margin-bottom: 8px;
-      font-size: 1rem;
-      color: #e0e0e0;
-    }
-
-    p {
-      font-size: 1rem;
-      color: #e0e0e0;
-      margin-bottom: 1.5em;
-    }
-
-    a {
-      color: #4fc3f7;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 30px 0;
-      font-size: 0.95rem;
-      background: rgba(255,255,255,0.05);
-      color: #f0f0f0;
-    }
-
-    thead {
-      background-color: #2c3e50;
-    }
-
-    th, td {
-      padding: 14px;
-      border: 1px solid rgba(255,255,255,0.1);
-      text-align: center;
-    }
-
-    tbody tr:nth-child(even) {
-      background-color: rgba(255,255,255,0.04);
-    }
-
-    .contact {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid #4fc3f7;
-      font-size: 1rem;
-    }
-
-    .contact p {
-      margin: 0.3em 0;
-    }
-
-    /* Sidebar lateral fijo */
-    .sidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 200px;
-      background-color: #2c3e50;
-      padding-top: 60px;
-      box-shadow: 2px 0 5px rgba(0,0,0,0.5);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      z-index: 1000;
-    }
-
-    .sidebar a {
-      color: #b8d7ff;
-      font-weight: 600;
-      font-size: 1.1rem;
-      text-decoration: none;
-      padding: 10px 15px;
-      border-radius: 6px;
-      width: 90%;
-      text-align: center;
-      transition: background-color 0.3s ease;
-    }
-
-    .sidebar a:hover {
-      background-color: #4fc3f7;
-      color: #1c2331;
-      text-decoration: none;
-    }
-
-    @media (max-width: 768px) {
-      body {
-        padding: 20px 10px;
-      }
-
-      .container {
-        margin-left: 0;
-        padding: 20px;
-      }
-
-      .sidebar {
-        position: static;
-        width: 100%;
-        height: auto;
-        flex-direction: row;
-        padding: 10px 0;
-        gap: 10px;
-        box-shadow: none;
-        justify-content: space-around;
-      }
-
-      .sidebar a {
-        font-size: 0.9rem;
-        padding: 8px 10px;
-        width: auto;
-      }
-    }
-  </style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav class="sidebar">
-    <a href="https://github.com/ziphra-messenger" target="_blank" rel="noopener noreferrer">GitHub</a>
-    <a href="./javadocs.html" target="_blank" rel="noopener noreferrer">Javadoc</a>
-    <a href="./wiki.html" target="_blank" rel="noopener noreferrer">Wiki</a>
-    <a href="./release.html" target="_blank" rel="noopener noreferrer">Release</a>
-    <a href="#contact-section">Contact</a>
-  </nav>
+  <div include-html="navbar.html"></div>
 
-  <div class="container">
-    <h1>Ziphra Messenger 🔐</h1>
 
-    <p>
-      Ziphra Messenger is an inviolable, end-to-end encrypted messaging system, built with military-grade encryption and engineered to guarantee total privacy and digital autonomy.
-    </p>
+        <div class="container"> 
+            <h1>Ziphra Messenger 🔐</h1> 
+            <p> 
+      Ziphra Messenger is an inviolable, end-to-end encrypted messaging system, built with military-grade encryption and engineered to guarantee total privacy and digital autonomy. </p> 
+            <ul> 
+                <li>🚫 No data is ever collected — not now, not later</li>                 
+                <li>🧹 All metadata is stripped before transmission</li>                 
+                <li>📱 Nothing is stored on the device: no messages, no photos, no audio, no videos</li>                 
+                <li>🧾 <b>No phone number, email, or identity verification is ever required</b>
+                </li>                 
+                <li>🕵️‍♂️ No person, organization, or government can ever access your information</li>                 
+                <li>🛡️ Both the user's identity and their contacts remain completely hidden</li>                 
+                <li>📶 Fully independent — works without a phone line, SIM card, or external platforms</li>                 
+                <li>💬 Every conversation is ephemeral, private, and 100% secured</li>                 
+            </ul>             
+            <p>🔒 The entire system is sealed: no backdoors, no trackers, and no exceptions.</p> 
+            <p> 
+      Ziphra is 100% open source, licensed under the GNU General Public License v3.0 (GPLv3). Anyone can inspect, audit, and improve the code — total transparency, no hidden logic. </p> 
+            <p> 
+      Ziphra is not just secure — it is absolutely anonymous, untraceable, and unbreakable. Designed for those who demand true digital freedom. Created to protect what others don’t: your silence, your absence, your right to vanish. </p> 
+            <h2>🔍 Why Choose Ziphra Over WhatsApp, Signal, or Telegram?</h2> 
+            <table> 
+                <thead> 
+                    <tr> 
+                        <th>Feature</th> 
+                        <th>Ziphra</th> 
+                        <th>Signal</th> 
+                        <th>Telegram</th> 
+                        <th>WhatsApp</th> 
+                    </tr>                     
+                </thead>                 
+                <tbody> 
+                    <tr> 
+                        <td>🔒 End-to-End Encryption</td> 
+                        <td>✅ Always enabled</td> 
+                        <td>✅ Default</td> 
+                        <td>⚠️ Only in secret chats</td> 
+                        <td>✅ Default</td> 
+                    </tr>                     
+                    <tr> 
+                        <td>🕵️‍♂️ True Anonymity</td> 
+                        <td>✅ Untraceable</td> 
+                        <td>❌ Phone linked</td> 
+                        <td>❌ Identity linked</td> 
+                        <td>❌ Identity linked</td> 
+                    </tr>                     
+                    <tr> 
+                        <td>🧹 Metadata Stripped</td> 
+                        <td>✅ Fully stripped</td> 
+                        <td>⚠️ Partial</td> 
+                        <td>❌ Retained</td> 
+                        <td>❌ Retained</td> 
+                    </tr>                     
+                    <tr> 
+                        <td>🧾 No Account Needed</td> 
+                        <td>✅ 100% anonymous</td> 
+                        <td>❌ Phone number required</td> 
+                        <td>❌ Phone number required</td> 
+                        <td>❌ Phone number required</td> 
+                    </tr>                     
+                    <tr> 
+                        <td>🌐 Open Source</td> 
+                        <td>✅ 100% (GPLv3)</td> 
+                        <td>✅ Partially</td> 
+                        <td>⚠️ Partially</td> 
+                        <td>❌ Closed source</td> 
+                    </tr>                     
+                    <tr> 
+                        <td>🛠️ Self-Hosting Server</td> 
+                        <td>✅ Easy to deploy</td> 
+                        <td>⚠️ Complex setup</td> 
+                        <td>❌ Not possible</td> 
+                        <td>❌ Not possible</td> 
+                    </tr>                     
+                    <tr>
+                        <td>🎧 Personalized Support</td>
+                        <td>✅ Direct with developer</td>
+                        <td>⚠️ Community-based</td>
+                        <td>⚠️ Community + bots</td>
+                        <td>❌ Difficult to reach</td>
+                    </tr>                     
+                </tbody>                 
+            </table>             
+                    
 
-    <ul>
-      <li>🚫 No data is ever collected — not now, not later</li>
-      <li>🧹 All metadata is stripped before transmission</li>
-      <li>📱 Nothing is stored on the device: no messages, no photos, no audio, no videos</li>
-      <li>🧾 <b>No phone number, email, or identity verification is ever required</b></li>
-      <li>🕵️‍♂️ No person, organization, or government can ever access your information</li>
-      <li>🛡️ Both the user's identity and their contacts remain completely hidden</li>
-      <li>📶 Fully independent — works without a phone line, SIM card, or external platforms</li>
-      <li>💬 Every conversation is ephemeral, private, and 100% secured</li>
-    </ul>
+             <div include-html="footer.html"></div>
 
-    <p>🔒 The entire system is sealed: no backdoors, no trackers, and no exceptions.</p>
+        </div>     
 
-    <p>
-      Ziphra is 100% open source, licensed under the GNU General Public License v3.0 (GPLv3). Anyone can inspect, audit, and improve the code — total transparency, no hidden logic.
-    </p>
 
-    <p>
-      Ziphra is not just secure — it is absolutely anonymous, untraceable, and unbreakable. Designed for those who demand true digital freedom. Created to protect what others don’t: your silence, your absence, your right to vanish.
-    </p>
+ 
 
-    <h2>🔍 Why Choose Ziphra Over WhatsApp, Signal, or Telegram?</h2>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Feature</th>
-          <th>Ziphra</th>
-          <th>Signal</th>
-          <th>Telegram</th>
-          <th>WhatsApp</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>🔒 End-to-End Encryption</td>
-          <td>✅ Always enabled</td>
-          <td>✅ Default</td>
-          <td>⚠️ Only in secret chats</td>
-          <td>✅ Default</td>
-        </tr>
-         <tr>
-          <td>🕵️‍♂️ True Anonymity</td>
-          <td>✅ Untraceable</td>
-          <td>❌ Phone linked</td>
-          <td>❌ Identity linked</td>
-          <td>❌ Identity linked</td>
-        </tr>
-        <tr>
-          <td>🧹 Metadata Stripped</td>
-          <td>✅ Fully stripped</td>
-          <td>⚠️ Partial</td>
-          <td>❌ Retained</td>
-          <td>❌ Retained</td>
-        </tr>
-        <tr>
-          <td>🧾 No Account Needed</td>
-          <td>✅ 100% anonymous</td>
-          <td>❌ Phone number required</td>
-          <td>❌ Phone number required</td>
-          <td>❌ Phone number required</td>
-        </tr>
-        
-        <tr>
-          <td>🌐 Open Source</td>
-          <td>✅ 100% (GPLv3)</td>
-          <td>✅ Partially</td>
-          <td>⚠️ Partially</td>
-          <td>❌ Closed source</td>
-        </tr>
-        <tr>
-          <td>🛠️ Self-Hosting Server</td>
-          <td>✅ Easy to deploy</td>
-          <td>⚠️ Complex setup</td>
-          <td>❌ Not possible</td>
-          <td>❌ Not possible</td>
-        </tr>
-       
-      </tbody>
-    </table>
-
-    <div class="contact" id="contact-section">
-      <h2>📬 Contact</h2>
-      <p>📧 <strong>Email:</strong> <a href="mailto:jorgekagiagian@gmail.com">jorgekagiagian@gmail.com</a></p>
-      <p>📱 <strong>WhatsApp:</strong> <a href="https://wa.me/5491159974206" target="_blank">+54 9 11 5997-4206</a></p>
-      <p>💻 Project on GitHub: <a href="https://github.com/ziphra-messenger" target="_blank">github.com/ziphra-messenger</a></p>
-    </div>
-
-    <footer>
-      <p>
-        🧑‍💻 Open Source under 
-        <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU General Public License v3.0</a>
-      </p>
-      <p style="margin-top: 10px; font-size: 0.8rem; color: #888;">
-        © 2025 Ziphra Messenger — Created by Jorge Kagiagian
-      </p>
-    </footer>
-  </div>
-
+  <script src="include.js"></script>
 </body>
 </html>
