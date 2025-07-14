@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ziphra Messenger 🔐</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two images per row */
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.screenshot {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* centra horizontalmente */
+  justify-content: center; /* centra verticalmente (útil si tiene altura fija) */
+  text-align: center;
+}
+
+  .screenshot:hover {
+    transform: scale(1.02);
+  }
+
+  .screenshot img {
+    max-width: 100%;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .caption {
+    font-size: 1rem;
+    color: #e0e0e0;
+    text-align: center;
+  }
+</style>
+
+</head>
+<body>
+
+  <div include-html="navbar.html"></div>
+
+
+  <div class="container">
+    <h1>🖼️ Ziphra Messenger Screenshots</h1>
+    <p>Here are some of the key interface screens from the Ziphra Messenger application.</p>
+
+    <div class="gallery">
+      <div class="screenshot">
+        <img src="images/baf182ff-8d8f-419f-89a5-995438556508.png" alt="Login Screen" height="500px">
+        <div class="caption">Upcoming Design</div>
+      </div>
+            <div class="screenshot">
+        <img src="images/login.png" alt="Login Screen" height="500px">
+        <div class="caption">Login Screen</div>
+      </div>
+
+              <div class="screenshot">
+            <img src="images/home.png" alt="Settings" height="500px">
+        <div class="caption">Contacts & Groups List</div>
+      </div>
+
+
+      
+      <div class="screenshot">
+        <img src="images/chat.png" alt="Chat Interface" height="500px">
+        <div class="caption">Chat Interface</div>
+      </div>
+      <div class="screenshot">
+        <img src="images/hiddeneye.png" alt="Chat Interface" height="500px">
+        <div class="caption">Chat Interface</div>
+      </div>      
+            <div class="screenshot">
+        <img src="images/emojis.png" alt="Chat Interface" height="500px">
+        <div class="caption">Chat Interface</div>
+      </div>   
+                  <div class="screenshot">
+        <img src="images/specialsend.png" alt="Chat Interface" height="500px">
+        <div class="caption">special Message</div>
+      </div>   
+      <div class="screenshot">
+        <img src="images/invitationcode.png" alt="User Profile" height="500px">
+        <div class="caption">Invitation Code</div>
+      </div>
+      <div class="screenshot">
+        <img src="images/myaccountsetting.png" alt="Settings" height="500px">
+        <div class="caption">Account Settings</div>
+      </div>
+    </div>
+  
+
+             <div include-html="footer.html"></div>
+
+        </div>     
+
+
+ 
+
+  <script src="include.js"></script>
+</body>
+</html>
+
+
+
