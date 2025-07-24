@@ -179,4 +179,20 @@ tbody tr:nth-child(even) {
     grid-template-columns: 1fr; /* one image per row on narrow screens */
   }
 }
+
 }
+    .video-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+
+    }
+    iframe {
+      
+      border: none;
+      justify-content: center;
+      align-items: center;
+    }
